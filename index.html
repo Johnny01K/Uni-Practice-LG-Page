@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Kolokvijum</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo-blok">
+        <div class="logo-kruzic">K</div>
+        <div class="naziv-firme">
+          <div class="red1">KATALOG D.O.O.</div>
+          <div class="red2">LESKOVAC</div>
+        </div>
+      </div>
+
+      <div class="sredina">
+        <div class="search-box" id="searchZona">
+          <form id="formaPretraga">
+            <input type="text" id="pretraga" placeholder="Pretraga proizvoda" aria-label="pretraga proizvoda">
+            <button type="submit" title="Pretraga" class="ikonica-lupa" aria-label="lupa" style="background:transparent;border:none">
+              🔍
+            </button>
+            <div id="greskaPretraga" class="greska" style="display:none"></div>
+          </form>
+        </div>
+
+        <div class="korisnik-blok">
+          <div class="korisnik-ikona">
+            <span>👤</span>
+            <select id="mojNalog" aria-label="Moj nalog">
+              <option value="moj">Moj nalog</option>
+              <option value="reg">Registracija</option>
+              <option value="prij">Prijava</option>
+            </select>
+          </div>
+
+          <div class="pristupljivost-kutija" id="kutijaPristupljivost" aria-label="Pristupljivost">
+            <div style="
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+  </div>
+
+  <nav>
+    <div class="meni">
+      <a href="#">Računarska oprema</a>
+      <a href="#">Štampači, skeneri</a>
+      <a href="#">TV, Audio i Video</a>
+      <a href="#">Bela Tehnika</a>
+    </div>
+  </nav>
+
+  <div class="info-traka">
+    <div>016.213.312 &nbsp; Radno vreme: 08-17 Sub 08-15 Nedeljom Online</div>
+  </div>
+
+  <section class="banner">
+    <div class="banner-levo">
+      <h2>Life's Good.</h2>
+      <p>LG 5 Godina sigurnosti</p>
+      <a class="btn-saznaj" href="#">Saznajte više</a>
+    </div>
+    <div class="banner-desno">
+      <div class="slika-mesto"> <!-- slika za bannerv --></div>
+    </div>
+  </section>
+
+  <main class="sadrzaj">
+    <h3 class="naslov-kompanija">Kompanija</h3>
+    <p class="tekst-kompanija">Naša firma osnovana je 1993. godine i je jedna od prvih računarskih kompanija na jugu Srbije. U našem asortimanu možete pronaći veliki izbor IT opreme, AV opreme, bele tehnike, malih kućnih aparata, uređaja za video nadzor, mobilnih telefona, 3d štampača i skenera, ali i mnogih drugih uređaja.</p>
+
+    <div class="donji-blok">
+      <div class="donji-levo">
+        <div class="linkovi">
+          <a href="docs/apr_resenje.pdf" target="_blank">APR Rešenje</a>
+          <a href="docs/izvod_pdv.pdf" target="_blank">Izvod iz Registra obveznika PDV</a>
+          <div class="kontakt">Kontakt e-mail: <a class="kontakt-email" href="mailto:mp@ka.rs">mp@ka.rs</a></div>
+        </div>
+      </div>
+
+      <div class="donji-desno">
+        <div class="laptop"><!-- levi laptop --></div>
+        <div class="popust">
+          <div class="laptop"><!-- slika laptopa pls --></div>
+          <div class="znak">Uštedi 5%</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

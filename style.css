@@ -1,0 +1,336 @@
+    :root{
+      --bg:#ffffff;
+      --text:#222222;
+      --muted:#7a7a7a;
+      --primary:#1b1b57;
+      --accent:#e94b3c;
+      --orange:#ff9800;
+      --container-width:1100px;
+      font-size:16px;
+    }
+
+    [tema="tamna"]{
+      --bg:#0f0f12;
+      --text:#e9e9ea;
+      --muted:#a8a8a8;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+        margin:0;
+        font-family:Arial, Helvetica, sans-serif;
+        background:var(--bg);
+        color:var(--text);
+    }
+
+    .wrap{
+        max-width:var(--container-width);
+        margin:0 auto;
+        padding:18px
+    }
+
+    /* header */
+    header{
+        display:flex;
+        align-items:center;
+        gap:20px
+    }
+
+    .logo-blok{
+        display:flex;
+        align-items:center;
+        gap:12px
+    }
+
+    .logo-kruzic{
+        width:70px;
+        height:50px;
+        background:#1e73be;
+        border-radius:8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-weight:700
+    }
+    
+    .naziv-firme{
+        line-height:1;
+    }
+    
+    .naziv-firme .red1{
+        font-weight:700
+    }
+    
+    .naziv-firme .red2{
+        font-size:0.95rem
+    }
+
+    /* search i korisnik */
+    .sredina{
+        flex:1;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:14px
+    }
+    
+    .search-box{
+        position:relative;
+        width:50%;
+        min-width:220px
+    }
+    
+    .search-box input{
+        width:100%;
+        padding:12px 44px 12px 12px;
+        border:3px solid #000;
+        border-radius:4px;
+        background:transparent
+    }
+    
+    .ikonica-lupa{
+        position:absolute;
+        right:8px;
+        top:50%;
+        transform:translateY(-50%);
+        width:34px;
+        height:34px;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        opacity:0.9
+    }
+    
+    .korisnik-blok{
+        display:flex;
+        align-items:center;
+        gap:8px
+    }
+    
+    .korisnik-ikona{
+        background:#efefef;
+        padding:8px;
+        border-radius:6px;
+        display:flex;
+        align-items:center;
+        gap:8px
+    }
+    
+    .pristupljivost-kutija{
+        width:130px;
+        height:34px;
+        border:2px solid #000;
+        margin-left:8px
+    }
+
+    /* meni */
+    nav{
+        width: 59%;
+        margin: 10px auto;
+        background:var(--primary);
+        color:#fff;padding:10px 0;
+        margin-top:12px
+    }
+    
+    .meni{
+        max-width:var(--container-width);
+        margin:0 auto;
+        display:flex;
+        gap:18px;
+        padding:0 18px
+    }
+    
+    .meni a{
+        color:white;
+        text-decoration:none;
+        padding:8px 6px
+    }
+
+    /* info i banner */
+    .info-traka{
+        max-width:var(--container-width);
+        margin:6px auto;
+        padding:8px 18px;
+        color:var(--muted);
+        display:flex;
+        justify-content:flex-end
+    }
+    
+    .banner{
+        display:flex;
+        gap:0;
+        align-items:stretch;
+        max-width:var(--container-width);
+        margin:12px auto
+    }
+    
+    .banner-levo{
+        flex:1;
+        background:#111;
+        color:#fff;
+        padding:28px
+    }
+    
+    .banner-levo h2{
+        margin:0 0 10px
+    }
+    
+    .btn-saznaj{
+        display:inline-block;
+        background:var(--accent);
+        color:#fff;
+        padding:10px 16px;
+        border-radius:6px;
+        text-decoration:none;
+        margin-top:10px
+    }
+    
+    .banner-desno{
+        width:420px;
+        background-color: #e2e2e2;
+        display:flex;
+        align-items:center;
+        justify-content:center
+    }
+    
+    .banner-desno .slika-mesto{
+        width:90%;
+        height:120px;
+        background:#ccc;
+        border-radius:6px
+    }
+
+    /* kompanija */
+    .sadrzaj{
+        max-width:var(--container-width);
+        margin:16px auto;
+        padding:0 18px
+    }
+    
+    .naslov-kompanija{
+        color:var(--primary);
+        font-weight:700;
+        font-size:1.4rem;
+        margin-bottom:6px
+    }
+    
+    .tekst-kompanija{
+        color:var(--muted);
+        line-height:1.6
+    }
+
+    /* donji blok */
+    .donji-blok{
+        display:flex;
+        gap:20px;
+        align-items:flex-start;
+        justify-content:space-between;
+        margin-top:24px
+    }
+    
+    .donji-levo{
+        flex:1
+    }
+    
+    .donji-desno{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:16px
+    }
+    
+    .laptop{
+        width:180px;
+        height:110px;
+        background:#eee;
+        border-radius:6px;
+        display:flex;
+        align-items:center;
+        justify-content:center
+    }
+    
+    .popust{
+        position:relative
+    }
+    
+    .popust .znak{
+        position:absolute;
+        top:-18px;
+        right:6px;
+        background:var(--orange);
+        color:#fff;
+        padding:6px 10px;
+        border-radius:4px;
+        font-weight:700
+    }
+    
+    .linkovi{
+        margin-top:10px
+    }
+    
+    .linkovi a{
+        display:block;
+        color:var(--primary);
+        text-decoration:underline;
+        margin-bottom:6px
+    }
+    
+    .kontakt-email{
+        font-weight:700
+    }
+
+    /* responzivnost */
+    @media (max-width:900px){
+      .search-box{
+        width:65%
+    }
+      
+      .banner{
+        flex-direction:column
+    }
+      
+      .banner-desno{
+        width:100%;
+        order:2
+    }
+      
+      .banner-levo{
+        order:1
+    }
+      
+      .donji-blok{
+        flex-direction:column
+    }
+      
+      .donji-desno{
+        flex-direction:column
+    }
+      
+      .donji-levo .laptop{
+        display:none
+    }
+      
+      .pristupljivost-kutija{
+        width:100%
+    }
+    }
+
+/* mobilni ekran */
+    @media (max-width:480px){
+      .search-box{
+        width:80%
+    }
+      :root{
+        font-size:15px
+    }
+    }
+
+    select{
+        padding:8px;
+        border-radius:4px;
+        border:1px solid #ddd;
+        background:transparent
+    }
